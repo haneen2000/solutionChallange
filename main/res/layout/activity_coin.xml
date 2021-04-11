@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/secondaryLightColor"
+    tools:context=".Coin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cardtype"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Type"></EditText>
+
+
+        <!--/////////////////////////////////////////////////////////////////////////////-->
+        <EditText
+            android:id="@+id/cardnumber"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Card Number"></EditText>
+
+
+        <!--/////////////////////////////////////////////////////////////////////////////-->
+        <EditText
+            android:id="@+id/nameoncard"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name On Card"></EditText>
+
+
+        <!--/////////////////////////////////////////////////////////////////////////////-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/expirydate"
+                android:inputType="date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Expiry Date"></EditText>
+
+
+            <!--/////////////////////////////////////////////////////////////////////////////-->
+            <EditText
+                android:id="@+id/cvv"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="cvv"></EditText>
+
+
+
+    </LinearLayout>
+
+        <Button
+        android:id="@+id/done"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="done" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Donate one dollar to end \n hunger on the world"></TextView>
+
+
+</LinearLayout>
+</LinearLayout>
